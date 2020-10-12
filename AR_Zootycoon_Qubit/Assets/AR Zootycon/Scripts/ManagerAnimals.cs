@@ -2,7 +2,7 @@
 
 public class ManagerAnimals : MonoBehaviour
 {
-    //[SerializeField] internal GameObject referencePrefabAnimals;
+    [SerializeField] internal SOAnimals[] sOAnimals;
     [SerializeField] internal GameObject[] prefabAnimals;
     internal Transform positionParentInstance;
 
