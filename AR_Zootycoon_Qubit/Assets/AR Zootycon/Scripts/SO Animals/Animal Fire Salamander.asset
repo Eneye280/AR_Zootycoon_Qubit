@@ -12,9 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b37857539a73ce4b8d3a799708d526c, type: 3}
   m_Name: Animal Fire Salamander
   m_EditorClassIdentifier: 
-  iconAnimal: {fileID: 0}
-  descriptionAnimal: 
+  iconAnimal: {fileID: 21300000, guid: c47deca8074998a40aae32f3f086af28, type: 3}
+  descriptionAnimal: "Es una especie de anfibio urodelo de la familia Salamandridae.
+    Es el m\xE1s com\xFAn de los urodelos en Europa. De h\xE1bitos terrestres, \xFAnicamente
+    entra en el agua para parir, y muchas subespecies lo hacen en tierra.\n\nEs un
+    urodelo inconfundible, de fondo negro y manchas variadas amarillas muy intensas
+    que pueden llegar a cubrir la casi totalidad del cuerpo. A veces tambi\xE9n se
+    aprecian manchas de color rojizo."
+  stateConservation: {fileID: 21300000, guid: 54a632603a163974c83c6b2b915050c6, type: 3}
+  habitAnimal: 
+  longevity: 
   isOtherColor: 0
   colorAnimal: []
-  habitAnimal: 
+  isOtherSpecies: 0
   otherSpecieAnimal: []
+  soundAnimal: {fileID: 0}

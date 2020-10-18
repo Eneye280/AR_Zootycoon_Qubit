@@ -18,14 +18,14 @@ public class ManagerUI : MonoBehaviour
     [SerializeField] internal GameObject panelContentInfoAnimals;
 
     [Header("SETTINGS SO ANIMALS")]
-    [SerializeField] internal SOAnimals[] sOAnimals;
-    [Space(10)]
     [SerializeField] internal Image iconAnimals;
+    [SerializeField] internal Image iconStateConservation;
+    [Space(10)]
     [SerializeField] internal TextMeshProUGUI descriptionAnimals;
-    [Space(3)]
+    [Space(10)]
     [SerializeField] internal Image[] colorAnimals;
     [SerializeField] internal TextMeshProUGUI habitAnimal;
-    [Space(3)]
+    [Space(10)]
     [SerializeField] internal Image[] otherSpecieAnimal;
 
     private WaitForSeconds delayStopPanelViewGame = new WaitForSeconds(1f);
