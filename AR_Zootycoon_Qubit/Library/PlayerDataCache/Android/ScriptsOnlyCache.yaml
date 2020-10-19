@@ -58,6 +58,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
     Unity.XR.ARFoundation.dll:
+    - UnityEngine.XR.ARFoundation.ARBackgroundRendererFeature
     - UnityEngine.XR.ARFoundation.ARCameraBackground
     - UnityEngine.XR.ARFoundation.ARCameraManager
     - UnityEngine.XR.ARFoundation.ARInputManager
