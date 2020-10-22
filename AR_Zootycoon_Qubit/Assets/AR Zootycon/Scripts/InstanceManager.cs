@@ -8,7 +8,7 @@ public class InstanceManager : MonoBehaviour
 {
     public static InstanceManager instance;
 
-    [SerializeField] internal ManagerAnimals managerAnimals;
+    [SerializeField] internal ManagerSpecie managerAnimals;
     [SerializeField] internal ManagerUI managerUI;
 
     public bool isEnableInstance;

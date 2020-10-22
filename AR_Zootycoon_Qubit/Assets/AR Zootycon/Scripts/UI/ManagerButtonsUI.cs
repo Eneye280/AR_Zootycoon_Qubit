@@ -7,9 +7,6 @@ public class ManagerButtonsUI : MonoBehaviour
     [Header("BUTTON TUTORIAL")]
     [SerializeField] internal bool isButtonTutorial;
 
-    [Header("PANEL INFORMATION ANIMAL")]
-    [SerializeField] internal bool isInformationAnimal;
-
     [Header("OPEN PANEL LEFT")]
     [SerializeField] internal bool isPanelActive;
     [SerializeField] internal Animator animPanelLeft;
@@ -64,21 +61,6 @@ public class ManagerButtonsUI : MonoBehaviour
         isButtonTutorial = false;
     } 
     #endregion
-
-    public void ButtonOnOffInformationAnimal(GameObject contentInfoAnimal)
-    {
-        isInformationAnimal = !isInformationAnimal;
-
-        switch (isInformationAnimal)
-        {
-            case true:
-                contentInfoAnimal.SetActive(true);
-                break;
-            case false:
-                contentInfoAnimal.SetActive(false);
-                break;
-        }
-    }
 
     public void ButtonOnOffTutorial()
     {
