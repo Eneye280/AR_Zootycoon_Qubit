@@ -12,13 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b37857539a73ce4b8d3a799708d526c, type: 3}
   m_Name: Animal Yellow Fattail Scorpion
   m_EditorClassIdentifier: 
-  iconAnimal: {fileID: 21300000, guid: 9c5015f002a74b5458aab6152b8a948a, type: 3}
-  descriptionAnimal: 
-  stateConservation: {fileID: 21300000, guid: 54a632603a163974c83c6b2b915050c6, type: 3}
-  habitAnimal: 
-  longevity: 
-  isOtherColor: 0
-  colorAnimal: []
+  positionInList: 4
+  isAnimals: 1
+  isPlant: 0
+  nameSpecie: 'Fattail Scorpion '
+  iconContentModel: {fileID: 21300000, guid: 8cc6567a63e885d46a84badc793fd42b, type: 3}
+  iconMoreInfo: {fileID: 21300000, guid: 9c5015f002a74b5458aab6152b8a948a, type: 3}
+  descriptionSpecie: "Los escorpiones o alacranes son un orden de artr\xF3podos de
+    la clase de los ar\xE1cnidos. Est\xE1n provistos de un par de ap\xE9ndices en
+    forma de pinza (pedipalpos) y una cola acabada en un aguij\xF3n provisto de veneno.\r\n\r\nSe
+    conocen unas mil cuatrocientas especies en todo el mundo. Alcanzan tama\xF1os
+    entre los nueve mil\xEDmetros de Typhlochactas mitchelli y los veinti\xFAn cent\xEDmetros
+    de los escorpiones emperador (Pandinus imperator) o de Hadogenes troglodyes."
   isOtherSpecies: 0
-  otherSpecieAnimal: []
-  soundAnimal: {fileID: 0}
+  otherSpecie: []
+  isStateConservationAnimals: 1
+  stateConservationAnimals: {fileID: 21300000, guid: 9e45fe39337e07240a29e431b4e3a4c8,
+    type: 3}
+  habitAnimals: 
+  longevityAnimals: 
+  isOtherColorAnimals: 0
+  colorRepresentativeAnimals: []
+  isAudioSpecie: 0
+  soundSpecie: {fileID: 0}
+  habitPlant: 
+  longevityPlant: 
+  isOtherColorPlant: 0
+  colorRepresentativePlant: []

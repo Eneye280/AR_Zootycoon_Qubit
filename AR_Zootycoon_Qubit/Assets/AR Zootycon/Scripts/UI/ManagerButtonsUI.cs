@@ -11,8 +11,7 @@ public class ManagerButtonsUI : MonoBehaviour
     [SerializeField] internal bool isPanelActive;
     [SerializeField] internal Animator animPanelLeft;
 
-    #region PANEL LEFT ANIMATION
-    public void OpenPanel()
+    public void OpenPanelLeftAnimation()
     {
         isPanelActive = !isPanelActive;
 
@@ -37,19 +36,12 @@ public class ManagerButtonsUI : MonoBehaviour
         managerUI.panelContentInfoAnimals.SetActive(false);
         isButtonTutorial = false;
     }
-    public void ButtonContinueToPanelView()
-    {
-        managerUI.EnablePanel(1, false);
-        managerUI.contentInfoTutorial.SetActive(true);
-    }
-
-    public void OpenContentModel()
+    public void OpenPanelContentModel()
     {
         InstanceManager.instance.isEnableInstance = false;
         managerUI.EnablePanel(2, false);
         isButtonTutorial = false;
     }
-
     public void OpenPanelFavorite()
     {
         managerUI.EnablePanel(3, false);
@@ -60,7 +52,11 @@ public class ManagerButtonsUI : MonoBehaviour
         managerUI.EnablePanel(5, false);
         isButtonTutorial = false;
     } 
-    #endregion
+    public void OpenContentMoreInfo()
+    {
+        managerUI.EnablePanel(4, false);
+        isButtonTutorial = false;
+    }
 
     public void ButtonOnOffTutorial()
     {
@@ -78,5 +74,10 @@ public class ManagerButtonsUI : MonoBehaviour
                 managerUI.contentInfoTutorial.SetActive(false);
                 break;
         }
+    }
+    public void ButtonNextToPanelView()
+    {
+        managerUI.EnablePanel(1, false);
+        managerUI.contentInfoTutorial.SetActive(true);
     }
 }

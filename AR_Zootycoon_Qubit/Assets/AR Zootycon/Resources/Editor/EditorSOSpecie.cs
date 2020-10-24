@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(SOSpecie))]
+[CustomEditor(typeof(ScriptableManagerSpecie))]
 public class EditorSOSpecie : Editor
 {
+    //SETTINGS GENERAL
+    private SerializedProperty propertyPositionInList;
     private SerializedProperty propertyIsAnimals;
     private SerializedProperty propertyIsPlant;
     private SerializedProperty propertyNameSpecie;
@@ -13,10 +15,23 @@ public class EditorSOSpecie : Editor
     private SerializedProperty propertyIsOtherSpecies;
     private SerializedProperty propertyOtherSpecie;
 
+    //SETTINGS ANIMALS
+    private SerializedProperty propertyIsStateConservationAnimals;
+    private SerializedProperty propertyStateConservationAnimals;
+    private SerializedProperty propertyHabitAnimals;
+    private SerializedProperty propertyLongevityAnimals;
+    private SerializedProperty propertyIsOtherColorAnimals;
+    private SerializedProperty propertyColorRepresentativeAnimals;
+    private SerializedProperty propertyIsAudioSpecie;
+    private SerializedProperty propertySoundSpecie;
 
-    private SerializedProperty propertyClassAnimals;
-    private SerializedProperty propertyClassPlants;
+    //SETTINGS PLANTS
+    private SerializedProperty propertyHabitSpecie;
+    private SerializedProperty propertyLongevitySpecie;
+    private SerializedProperty propertyIsOtherColorPlant;
+    private SerializedProperty propertyColorRepresentativePlant;
 
+    //FONT
     private GUISkin skinTitleGeneral;
     private GUISkin skinTitleAnimals;
     private GUISkin skinTitlePlants;
@@ -27,6 +42,8 @@ public class EditorSOSpecie : Editor
         skinTitleAnimals = Resources.Load<GUISkin>("GuiSkin/TextAnimals");
         skinTitlePlants = Resources.Load<GUISkin>("GuiSkin/TextPlants");
 
+        //SETTINGS GENERAL
+        propertyPositionInList = serializedObject.FindProperty("positionInList");
         propertyIsAnimals = serializedObject.FindProperty("isAnimals");
         propertyIsPlant = serializedObject.FindProperty("isPlant");
         propertyNameSpecie = serializedObject.FindProperty("nameSpecie");
@@ -36,9 +53,21 @@ public class EditorSOSpecie : Editor
         propertyIsOtherSpecies = serializedObject.FindProperty("isOtherSpecies");
         propertyOtherSpecie = serializedObject.FindProperty("otherSpecie");
 
+        //SETTINGS ANIMALS
+        propertyIsStateConservationAnimals = serializedObject.FindProperty("isStateConservationAnimals");
+        propertyStateConservationAnimals = serializedObject.FindProperty("stateConservationAnimals");
+        propertyHabitAnimals = serializedObject.FindProperty("habitAnimals");
+        propertyLongevityAnimals = serializedObject.FindProperty("longevityAnimals");
+        propertyIsOtherColorAnimals = serializedObject.FindProperty("isOtherColorAnimals");
+        propertyColorRepresentativeAnimals = serializedObject.FindProperty("colorRepresentativeAnimals");
+        propertyIsAudioSpecie = serializedObject.FindProperty("isAudioSpecie");
+        propertySoundSpecie = serializedObject.FindProperty("soundSpecie");
 
-        propertyClassAnimals = serializedObject.FindProperty("animals");
-        propertyClassPlants = serializedObject.FindProperty("plants");
+        //SETTINGS PLANTS
+        propertyHabitSpecie = serializedObject.FindProperty("habitSpecie");
+        propertyLongevitySpecie = serializedObject.FindProperty("longevitySpecie");
+        propertyIsOtherColorPlant = serializedObject.FindProperty("isOtherColor");
+        propertyColorRepresentativePlant = serializedObject.FindProperty("colorRepresentative");
     }
 
     public override void OnInspectorGUI()
@@ -54,6 +83,7 @@ public class EditorSOSpecie : Editor
         GUILayout.EndHorizontal();
 
         serializedObject.Update();
+        EditorGUILayout.PropertyField(property: propertyPositionInList, includeChildren: true);
         EditorGUILayout.PropertyField(property: propertyIsAnimals, includeChildren: true);
         EditorGUILayout.PropertyField(property: propertyIsPlant, includeChildren: true);
         EditorGUILayout.PropertyField(property: propertyNameSpecie, includeChildren: true);
@@ -76,7 +106,14 @@ public class EditorSOSpecie : Editor
         GUILayout.EndHorizontal();
 
         serializedObject.Update();
-        EditorGUILayout.PropertyField(property: propertyClassAnimals, includeChildren: true);
+        EditorGUILayout.PropertyField(property: propertyIsStateConservationAnimals, includeChildren: true);
+        EditorGUILayout.PropertyField(property: propertyStateConservationAnimals, includeChildren: true);
+        EditorGUILayout.PropertyField(property: propertyHabitAnimals, includeChildren: true);
+        EditorGUILayout.PropertyField(property: propertyLongevityAnimals, includeChildren: true);
+        EditorGUILayout.PropertyField(property: propertyIsOtherColorAnimals, includeChildren: true);
+        EditorGUILayout.PropertyField(property: propertyColorRepresentativeAnimals, includeChildren: true);
+        EditorGUILayout.PropertyField(property: propertyIsAudioSpecie, includeChildren: true);
+        EditorGUILayout.PropertyField(property: propertySoundSpecie, includeChildren: true);
         serializedObject.ApplyModifiedProperties();
 
         /*___________________________________  SERTTINGS PLANTS  ________________________________________*/
@@ -91,7 +128,10 @@ public class EditorSOSpecie : Editor
         GUILayout.EndHorizontal();
 
         serializedObject.Update();
-        EditorGUILayout.PropertyField(property: propertyClassPlants, includeChildren: true);
+        EditorGUILayout.PropertyField(property: propertyHabitSpecie, includeChildren: true);
+        EditorGUILayout.PropertyField(property: propertyLongevitySpecie, includeChildren: true);
+        EditorGUILayout.PropertyField(property: propertyIsOtherColorPlant, includeChildren: true);
+        EditorGUILayout.PropertyField(property: propertyColorRepresentativePlant, includeChildren: true);
         serializedObject.ApplyModifiedProperties();
 
 
