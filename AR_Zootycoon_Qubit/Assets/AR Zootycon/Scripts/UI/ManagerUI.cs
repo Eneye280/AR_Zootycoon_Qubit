@@ -17,6 +17,10 @@ public class ManagerUI : MonoBehaviour
     [SerializeField] internal GameObject panelTutorialPositionateAnimals;
     [SerializeField] internal GameObject panelContentInfoAnimals;
 
+    [Header("PANEL SOUND UI")]
+    [SerializeField] internal Image iconSound;
+    [SerializeField] internal Sprite[] spriteSound;
+
     [Header("SCRIPTABLE OBJECTS SPECIES")]
     [SerializeField] internal TextMeshProUGUI nameSpecie;
     [SerializeField] internal Image iconAnimals;
