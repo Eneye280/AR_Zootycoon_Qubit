@@ -15,6 +15,11 @@ public class MoreInfoSpecie : MonoBehaviour
 
 
         //AQUI QUEDE (debe comparar el numero para que se adapte a la lista, de 0 a 5 )
+
+        //for (int i = 0; i < InstanceManager.instance.managerUI.childParentInstance.Count; i++)
+        //{
+        //    InstanceManager.instance.managerUI.childParentInstance.
+        //}
         refPositionList = InstanceManager.instance.managerSpecie.sOAnimals.Count();
     }
 
