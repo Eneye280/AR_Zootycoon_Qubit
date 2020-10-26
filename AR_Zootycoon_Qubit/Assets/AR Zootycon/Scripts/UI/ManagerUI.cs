@@ -26,10 +26,12 @@ public class ManagerUI : MonoBehaviour
     
     [Space(15)]
     [SerializeField] internal bool isOtherSpecies;
+    [SerializeField] internal GameObject[] parentOtherSpecieAndTitle;
     [SerializeField] internal Image[] otherSpecie;
 
     [Space(15)]
     [SerializeField] internal bool isStateConservationAnimals;
+    [SerializeField] internal GameObject[] parentStateConservationAndTitle;
     [SerializeField] internal Image iconStateConservation;
 
     [Space(15)]
@@ -38,35 +40,16 @@ public class ManagerUI : MonoBehaviour
     
     [Space(15)]
     [SerializeField] internal bool isOtherColorAnimals;
+    [SerializeField] internal GameObject[] parentOtherColorAnimalsAndTitle;
     [SerializeField] internal Image[] colorAnimals;
 
     [Space(15)]
     [SerializeField] internal bool isAudioAnimals;
+    [SerializeField] internal GameObject[] parentAudioAndTitle;
     [SerializeField] internal AudioSource audioAnimals;
-
-    [Header("INSTANCE CONTENT MODEL UI")]
-    [SerializeField] private ManagerSpecie managerSpecie;
-    
-    [Space(15)]
-    [SerializeField] private ScriptableContentSpecie scriptableContentSpecie;
-    [SerializeField] private Transform parentInstanceContentSpecie;
-    
-    [Space(10)]
-    public List<GameObject> childParentInstance;
 
     public void GeTAwake()
     {
-        GameObject objInstance;
-
-        for (int i = 0; i < scriptableContentSpecie.prefabAnimals.Count; i++)
-        {
-            objInstance = Instantiate(scriptableContentSpecie.prefabAnimals[i]);
-            objInstance.transform.SetParent(parentInstanceContentSpecie);
-
-            childParentInstance.Add(parentInstanceContentSpecie.GetChild(i).gameObject);
-            objInstance.GetComponent<Image>().sprite = managerSpecie.sOAnimals[i].iconContentModel;
-        }
-
         for (int i = 0; i < panelInProject.Length; i++)
         {
             panelInProject[0].SetActive(true);
