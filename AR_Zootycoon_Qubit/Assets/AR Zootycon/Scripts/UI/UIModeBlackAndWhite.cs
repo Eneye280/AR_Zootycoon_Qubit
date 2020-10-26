@@ -20,6 +20,7 @@ public class UIModeBlackAndWhite : MonoBehaviour
     [Space(15)]
     [SerializeField] internal Image[] imageDark;
     [SerializeField] internal Image[] imageSure;
+    [SerializeField] internal Image[] imageOfBlackToWhite;
     [SerializeField] internal TextMeshProUGUI[] textAppChangeToWhite;
     [SerializeField] internal TextMeshProUGUI[] textOrangeToWhite;
 
@@ -44,6 +45,12 @@ public class UIModeBlackAndWhite : MonoBehaviour
             {
                 imageSure[i].color = colorBlackSure;
             }
+            for (int i = 0; i < imageOfBlackToWhite.Length; i++)
+            {
+                imageOfBlackToWhite[i].color = colorWhite;
+            }
+
+
             for (int i = 0; i < textAppChangeToWhite.Length; i++)
             {
                 textAppChangeToWhite[i].color = colorWhite;
@@ -65,6 +72,12 @@ public class UIModeBlackAndWhite : MonoBehaviour
             {
                 imageSure[i].color = colorWhite;
             }
+            for (int i = 0; i < imageOfBlackToWhite.Length; i++)
+            {
+                imageOfBlackToWhite[i].color = colorBlack;
+            }
+
+
             for (int i = 0; i < textAppChangeToWhite.Length; i++)
             {
                 textAppChangeToWhite[i].color = colorBlack;
