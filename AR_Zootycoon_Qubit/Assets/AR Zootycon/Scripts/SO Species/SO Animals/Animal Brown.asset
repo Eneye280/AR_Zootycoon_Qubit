@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b37857539a73ce4b8d3a799708d526c, type: 3}
+  m_Name: Animal Brown
+  m_EditorClassIdentifier: 
+  positionInList: 0
+  isAnimals: 1
+  isPlant: 0
+  nameSpecie: 'Oso '
+  iconContentModel: {fileID: 21300000, guid: fa275d148edbce64f99b352e4486f222, type: 3}
+  iconMoreInfo: {fileID: 21300000, guid: bcbd14bf50164d3409fcf94c09c171b6, type: 3}
+  descriptionSpecie: "Es un habitante caracter\xEDstico de los bosques maduros de
+    Europa, Asia templada y Am\xE9rica del Norte. En este vasto territorio aparece
+    bajo cierto n\xFAmero de subespecies, que se diferencian unas de otras por la
+    coloraci\xF3n y el tama\xF1o, hasta tal punto que antiguamente se les consideraba
+    como especies aut\xF3ctonas. Podemos citar, por ejemplo, a los grandes grizzlys
+    (Ursus arctos horribilis) y el kodiak (Ursus arctos middendorffi). Su longevidad
+    es de veinticinco a treinta a\xF1os (m\xE1ximos conocidos de treinta y cuatro
+    a\xF1os en estado silvestre y cuarenta y siete en cautividad). Tiene una longitud
+    corporal de entre 1,50 y 2,95 m, dependiendo de la subespecie, y una altura en
+    la cruz de hasta 1,30 m. Su peso tambi\xE9n var\xEDa, desde los 100 hasta los
+    675 kg. "
+  isOtherSpecies: 0
+  otherSpecie: []
+  isStateConservationAnimals: 1
+  stateConservationAnimals: {fileID: 21300000, guid: 54a632603a163974c83c6b2b915050c6,
+    type: 3}
+  habitAnimals: "Est\xE1 distribuido por amplias zonas de Europa, Asia templada y
+    norte de Am\xE9rica, pero con una poblaci\xF3n desigual y fragmentada en peque\xF1os
+    n\xFAcleos."
+  longevityAnimals: "Los osos pardos en estado salvaje viven una media de veinticinco
+    a\xF1os. Los ejemplares cautivos tienen mayor esperanza de vida."
+  isOtherColorAnimals: 0
+  colorRepresentativeAnimals: []
+  isAudioSpecie: 0
+  soundSpecie: {fileID: 0}
+  habitPlant: 
+  longevityPlant: 
+  isOtherColorPlant: 0
+  colorRepresentativePlant: []

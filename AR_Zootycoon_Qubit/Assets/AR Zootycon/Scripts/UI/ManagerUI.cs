@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,25 +13,60 @@ public class ManagerUI : MonoBehaviour
     [SerializeField] internal GameObject imageAnimationScanner;
     [SerializeField] internal GameObject contentInfoTutorial;
 
-    [Header("SETTINGS PANEL SECONDARY IN VIEW GENERAL")]
+    [Header("PANEL SECONDARY IN VIEW GENERAL")]
     [SerializeField] internal GameObject panelTutorialPositionateAnimals;
     [SerializeField] internal GameObject panelContentInfoAnimals;
 
-    [Header("SETTINGS SO ANIMALS")]
+    [Header("SCRIPTABLE OBJECTS SPECIES")]
+    [SerializeField] internal TextMeshProUGUI nameSpecie;
     [SerializeField] internal Image iconAnimals;
-    [SerializeField] internal Image iconStateConservation;
-    [Space(10)]
+    
+    [Space(15)]
     [SerializeField] internal TextMeshProUGUI descriptionAnimals;
-    [Space(10)]
-    [SerializeField] internal Image[] colorAnimals;
+    
+    [Space(15)]
+    [SerializeField] internal bool isOtherSpecies;
+    [SerializeField] internal Image[] otherSpecie;
+
+    [Space(15)]
+    [SerializeField] internal bool isStateConservationAnimals;
+    [SerializeField] internal Image iconStateConservation;
+
+    [Space(15)]
     [SerializeField] internal TextMeshProUGUI habitAnimal;
+    [SerializeField] internal TextMeshProUGUI LongevityAnimals;
+    
+    [Space(15)]
+    [SerializeField] internal bool isOtherColorAnimals;
+    [SerializeField] internal Image[] colorAnimals;
+
+    [Space(15)]
+    [SerializeField] internal bool isAudioAnimals;
+    [SerializeField] internal AudioSource audioAnimals;
+
+    [Header("INSTANCE CONTENT MODEL UI")]
+    [SerializeField] private ManagerSpecie managerSpecie;
+    
+    [Space(15)]
+    [SerializeField] private ScriptableContentSpecie scriptableContentSpecie;
+    [SerializeField] private Transform parentInstanceContentSpecie;
+    
     [Space(10)]
-    [SerializeField] internal Image[] otherSpecieAnimal;
+    public List<GameObject> childParentInstance;
 
-    private WaitForSeconds delayStopPanelViewGame = new WaitForSeconds(1f);
-
-    private void Start()
+    public void GeTAwake()
     {
+        GameObject objInstance;
+
+        for (int i = 0; i < scriptableContentSpecie.prefabAnimals.Count; i++)
+        {
+            objInstance = Instantiate(scriptableContentSpecie.prefabAnimals[i]);
+            objInstance.transform.SetParent(parentInstanceContentSpecie);
+
+            childParentInstance.Add(parentInstanceContentSpecie.GetChild(i).gameObject);
+            objInstance.GetComponent<Image>().sprite = managerSpecie.sOAnimals[i].iconContentModel;
+        }
+
         for (int i = 0; i < panelInProject.Length; i++)
         {
             panelInProject[0].SetActive(true);

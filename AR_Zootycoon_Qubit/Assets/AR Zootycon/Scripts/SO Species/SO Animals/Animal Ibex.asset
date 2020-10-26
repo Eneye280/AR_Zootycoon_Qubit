@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b37857539a73ce4b8d3a799708d526c, type: 3}
+  m_Name: Animal Ibex
+  m_EditorClassIdentifier: 
+  positionInList: 2
+  isAnimals: 1
+  isPlant: 0
+  nameSpecie: cabra
+  iconContentModel: {fileID: 21300000, guid: 33cc7a57ffcfcae429776ddb82145593, type: 3}
+  iconMoreInfo: {fileID: 21300000, guid: 7130965752af58b409694b5278cc8763, type: 3}
+  descriptionSpecie: "La cabra (Capra aegagrus hircus) es un mam\xEDfero artiod\xE1ctilo
+    de la subfamilia Caprinae que fue domesticado alrededor del octavo milenio a.
+    C., sobre todo por su carne y leche.1\u200B Al macho de la cabra se le llama
+    cabr\xF3n (si bien en algunos pa\xEDses esta palabra se considera malsonante),
+    as\xED como tambi\xE9n cabro, chivato, macho cabr\xEDo, irasco o chivo, y a las
+    cr\xEDas se las llama cabrito, chivo o chivito. Al conjunto de estos animales,
+    criados por el hombre, se le conoce como ganado caprino o ganado cabr\xEDo.1\u200B"
+  isOtherSpecies: 0
+  otherSpecie: []
+  isStateConservationAnimals: 1
+  stateConservationAnimals: {fileID: 21300000, guid: 54a632603a163974c83c6b2b915050c6,
+    type: 3}
+  habitAnimals: "Las cabras viven bien en todos aquellos terrenos en que, por su
+    pendiente, elevaci\xF3n y plantas que se cr\xEDan, ser\xEDa de todo punto imposible
+    mantener otra clase de cuadr\xFApedos"
+  longevityAnimals: 
+  isOtherColorAnimals: 0
+  colorRepresentativeAnimals: []
+  isAudioSpecie: 0
+  soundSpecie: {fileID: 0}
+  habitPlant: 
+  longevityPlant: 
+  isOtherColorPlant: 0
+  colorRepresentativePlant: []

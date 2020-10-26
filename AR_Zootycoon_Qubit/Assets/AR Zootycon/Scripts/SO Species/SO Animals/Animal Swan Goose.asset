@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b37857539a73ce4b8d3a799708d526c, type: 3}
+  m_Name: Animal Swan Goose
+  m_EditorClassIdentifier: 
+  positionInList: 3
+  isAnimals: 1
+  isPlant: 0
+  nameSpecie: Pato
+  iconContentModel: {fileID: 21300000, guid: 9f2fe0d623e02494898aff4bc1c62017, type: 3}
+  iconMoreInfo: {fileID: 21300000, guid: 95111c16e8b583c4d93a9ebad18ad621, type: 3}
+  descriptionSpecie: "Pato es el nombre com\xFAn para ciertas aves de la familia
+    Anatidae, principalmente de la subfamilia Anatinae y dentro de ella del g\xE9nero
+    Anas. No son un grupo monofil\xE9tico, ya que no se incluyen los cisnes ni los
+    gansos."
+  isOtherSpecies: 0
+  otherSpecie: []
+  isStateConservationAnimals: 1
+  stateConservationAnimals: {fileID: 21300000, guid: 9e45fe39337e07240a29e431b4e3a4c8,
+    type: 3}
+  habitAnimals: 
+  longevityAnimals: 
+  isOtherColorAnimals: 0
+  colorRepresentativeAnimals: []
+  isAudioSpecie: 0
+  soundSpecie: {fileID: 0}
+  habitPlant: 
+  longevityPlant: 
+  isOtherColorPlant: 0
+  colorRepresentativePlant: []
