@@ -32,9 +32,13 @@ MonoBehaviour:
   habitAnimals: "Es un animal de h\xE1bitos nocturnos, aunque puede verse activa
     de d\xEDa si la humedad relativa es alta \u2014en d\xEDas lluviosos o neblinosos\u2014,
     y cuando la temperatura es fresca pero superior a los 3 \xBAC."
-  longevityAnimals: 
+  longevityAnimals: "1000 A\xF1os "
   isOtherColorAnimals: 0
-  colorRepresentativeAnimals: []
+  colorRepresentativeAnimals:
+  - {r: 1, g: 0.56404424, b: 0, a: 1}
+  - {r: 0, g: 0.67209816, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0.8710184, a: 1}
+  - {r: 0, g: 1, b: 0.2819376, a: 1}
   isAudioSpecie: 0
   soundSpecie: {fileID: 0}
   habitPlant: 

@@ -103,10 +103,11 @@ public class InstanceManager : MonoBehaviour
             }
         }
     }
+
+    /*________________________________________________ CALL IN BUTTON __________________________________________________________________*/
     public void CallInformativeToInstance(int index)
     {
         indexSpawnAnimals = index;
-        //isEnableInstance = true;
         managerUI.panelInProject[2].SetActive(false);
         managerUI.imageAnimationScanner.SetActive(true);
         managerUI.panelTutorialPositionateAnimals.SetActive(true);
