@@ -52,6 +52,9 @@ public class ManagerUI : MonoBehaviour
     [SerializeField] internal GameObject[] parentAudioAndTitle;
     [SerializeField] internal AudioSource audioAnimals;
 
+    [Header("FAVORITE")]
+    [SerializeField] internal Transform positionAddFavorite;
+
     public void GeTAwake()
     {
         for (int i = 0; i < panelInProject.Length; i++)

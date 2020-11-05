@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIModeBlackAndWhite : MonoBehaviour
+public class ChangeTemaApp : MonoBehaviour
 {
     [SerializeField] internal bool isModeBlack;
 
