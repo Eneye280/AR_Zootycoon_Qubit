@@ -16,8 +16,8 @@ public class AddToFavorite : MonoBehaviour
     [SerializeField] internal Sprite favoriteAdd;
     
     [Space(15)]
-    [SerializeField] private int count;
-    [SerializeField] internal Transform newInstance;
+    private int count;
+    internal Transform newInstance;
 
     public void AddFavorite()
     {

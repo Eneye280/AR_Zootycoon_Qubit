@@ -6,6 +6,7 @@ public class ManagerSpecie : MonoBehaviour
     [SerializeField] private ManagerUI managerUI;
 
     [SerializeField] internal Transform positionParentAnimals;
+    [SerializeField] internal int verifyPositionList;
 
     [Header("SETTINGS SPECIES")]
     [SerializeField] internal ScriptableManagerSpecie[] sOAnimals;
@@ -121,7 +122,14 @@ public class ManagerSpecie : MonoBehaviour
     public void GetEvents(int index)
     {
         EventsSpecie.getCompareScriptableAnimals(index);
+        verifyPositionList = index;
     }
+    #region Call Button
+    public void GetEventsInPanelStart()
+    {
+        GetComparedParametersSOWithUI(verifyPositionList);
+    } 
+    #endregion
 }
 
 
